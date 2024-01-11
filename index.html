@@ -33,7 +33,7 @@
         <div id="app">
             <div class="row">
                 <div class="col-auto">
-                    <ul class="list-group">
+                    <ul class="list-group" v-if="emails.length == 10">
                         <li class="list-group-item list-group-item-warning text-dark" v-for="e in emails">
                             {{ e }}
                         </li>
